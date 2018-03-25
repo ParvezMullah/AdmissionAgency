@@ -98,7 +98,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="form-group">
-                                <asp:TextBox ID="txtEmail" runat="server" class="form-control input-lg" placeholder="Email" TextMode="Email"></asp:TextBox>
+                                <asp:TextBox ID="txtEmail" runat="server" class="form-control input-lg" placeholder="Email"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="This is required Field" ControlToValidate="txtEmail" ForeColor="Red" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
                             </div>
                         </div>
