@@ -11,8 +11,8 @@ using System.Data;
 
 public partial class Students_ViewStatus : System.Web.UI.Page
 {
-    string applicationquery = "select University,fieldOfInterest,programOfInterest,Agent,applicationStatus from tblApplications where emailid=@emailid";
-    string visaquery = "select University,fieldOfInterest,programOfInterest,visaStatus,scheduledVisaAppointment,expectedVisaArrival from tblApplications where emailid=@emailid";
+    string applicationquery = "select University,fieldOfInterest,programOfInterest,Agent,applicationStatus from tblApplications where emailid=@emailid order by applicationid desc";
+    string visaquery = "select University,fieldOfInterest,programOfInterest,visaStatus,scheduledVisaAppointment,expectedVisaArrival from tblApplications where emailid=@emailid order by applicationid desc";
     protected void Page_Load(object sender, EventArgs e)
     {
         if(!IsPostBack)
